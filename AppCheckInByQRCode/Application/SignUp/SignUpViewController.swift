@@ -96,6 +96,12 @@ class SignUpViewController: UIViewController {
       formartedLabel[i].shadow(color: UIColor.black.cgColor, opacity: 0.1, radius: 5)
     }
   }
+  
+  // MARK: - Action
+  @IBAction func signUpButtonTapped(_ sender: UIButton) {
+    print("sign up button tapped")
+  }
+  
 }
 
 // MARK: - Text Field Delegate

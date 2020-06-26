@@ -130,6 +130,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <state key="normal" title="Đã có tài khoản?"/>
+                                                        <connections>
+                                                            <segue destination="oOp-5I-Qk7" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1fT-Ww-uu2"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-M4-43V">
                                                         <rect key="frame" x="30" y="503" width="292" height="36"/>
@@ -138,6 +141,9 @@
                                                         <state key="normal" title="ĐĂNG KÝ">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signUpButtonTapped:" destination="Uhs-7l-x7A" eventType="touchUpInside" id="4kj-0H-DI1"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -246,7 +252,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fn-o4-PNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-304" y="-54"/>
+            <point key="canvasLocation" x="-304.34782608695656" y="-54.241071428571423"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Zus-f1-JWM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="oOp-5I-Qk7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDS-gF-yMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="-133"/>
         </scene>
     </scenes>
     <resources>
