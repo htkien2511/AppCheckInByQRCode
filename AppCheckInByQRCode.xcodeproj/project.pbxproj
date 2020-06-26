@@ -15,6 +15,8 @@
 		7B4629D924A59558003B3168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629D824A59558003B3168 /* Assets.xcassets */; };
 		7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629DA24A59558003B3168 /* LaunchScreen.storyboard */; };
 		7B4629E724A59558003B3168 /* AppCheckInByQRCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629E624A59558003B3168 /* AppCheckInByQRCodeTests.swift */; };
+		7B4629F424A596FA003B3168 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4629F324A596FA003B3168 /* CloudKit.framework */; };
+		7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		7B4629E224A59558003B3168 /* AppCheckInByQRCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCheckInByQRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4629E624A59558003B3168 /* AppCheckInByQRCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCheckInByQRCodeTests.swift; sourceTree = "<group>"; };
 		7B4629E824A59558003B3168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4629F124A596F4003B3168 /* AppCheckInByQRCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppCheckInByQRCode.entitlements; sourceTree = "<group>"; };
+		7B4629F324A596FA003B3168 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4629F424A596FA003B3168 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				7B4629CB24A59557003B3168 /* AppCheckInByQRCode */,
 				7B4629E524A59558003B3168 /* AppCheckInByQRCodeTests */,
 				7B4629CA24A59557003B3168 /* Products */,
+				7B4629F224A596FA003B3168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +88,9 @@
 		7B4629CB24A59557003B3168 /* AppCheckInByQRCode */ = {
 			isa = PBXGroup;
 			children = (
-				7B4629CC24A59557003B3168 /* AppDelegate.swift */,
-				7B4629CE24A59557003B3168 /* SceneDelegate.swift */,
-				7B4629D024A59557003B3168 /* ViewController.swift */,
-				7B4629D224A59557003B3168 /* Main.storyboard */,
-				7B4629D824A59558003B3168 /* Assets.xcassets */,
-				7B4629DA24A59558003B3168 /* LaunchScreen.storyboard */,
-				7B4629DD24A59558003B3168 /* Info.plist */,
-				7B4629D524A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld */,
+				7B4629F524A597D9003B3168 /* Application */,
+				7B4629F624A597E1003B3168 /* Assets */,
+				7B4629F724A59843003B3168 /* Model */,
 			);
 			path = AppCheckInByQRCode;
 			sourceTree = "<group>";
@@ -100,6 +102,85 @@
 				7B4629E824A59558003B3168 /* Info.plist */,
 			);
 			path = AppCheckInByQRCodeTests;
+			sourceTree = "<group>";
+		};
+		7B4629F224A596FA003B3168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629F324A596FA003B3168 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B4629F524A597D9003B3168 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629FC24A59D01003B3168 /* HelperMethod */,
+				7B4629FB24A5986A003B3168 /* LaunchScreen */,
+				7B4629FA24A5985F003B3168 /* Main */,
+				7B4629F924A59857003B3168 /* Info */,
+				7B4629F824A5984A003B3168 /* CoreData */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7B4629F624A597E1003B3168 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629D824A59558003B3168 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7B4629F724A59843003B3168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B4629F824A5984A003B3168 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629D524A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld */,
+				7B4629F124A596F4003B3168 /* AppCheckInByQRCode.entitlements */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7B4629F924A59857003B3168 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629DD24A59558003B3168 /* Info.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		7B4629FA24A5985F003B3168 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629D224A59557003B3168 /* Main.storyboard */,
+				7B4629D024A59557003B3168 /* ViewController.swift */,
+				7B4629CE24A59557003B3168 /* SceneDelegate.swift */,
+				7B4629CC24A59557003B3168 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7B4629FB24A5986A003B3168 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629DA24A59558003B3168 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		7B4629FC24A59D01003B3168 /* HelperMethod */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */,
+			);
+			path = HelperMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
 				7B4629D124A59557003B3168 /* ViewController.swift in Sources */,
 				7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
@@ -366,17 +448,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppCheckInByQRCode/Application/CoreData/AppCheckInByQRCode.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3XHF7AHVR;
-				INFOPLIST_FILE = AppCheckInByQRCode/Info.plist;
+				INFOPLIST_FILE = AppCheckInByQRCode/Application/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.htkien.AppCheckInByQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,17 +469,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppCheckInByQRCode/Application/CoreData/AppCheckInByQRCode.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3XHF7AHVR;
-				INFOPLIST_FILE = AppCheckInByQRCode/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AppCheckInByQRCode/Application/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.htkien.AppCheckInByQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
