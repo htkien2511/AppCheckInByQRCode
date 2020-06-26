@@ -15,40 +15,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-fk-s5Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-fk-s5Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-MV-xwZ">
-                                <rect key="frame" x="28" y="272.5" width="319" height="317.5"/>
+                                <rect key="frame" x="28" y="288" width="319" height="318.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsZ-bE-aLh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG NHẬP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsZ-bE-aLh">
                                         <rect key="frame" x="27" y="20" width="265" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fR-3M-BCf">
-                                        <rect key="frame" x="27" y="75" width="265" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fR-3M-BCf">
+                                        <rect key="frame" x="27" y="75" width="265" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-Nt-ckx">
-                                        <rect key="frame" x="27" y="100.5" width="265" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập địa chỉ email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-Nt-ckx">
+                                        <rect key="frame" x="27" y="101" width="265" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="hz7-e8-xFc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-pa-okb">
-                                        <rect key="frame" x="27" y="145.5" width="265" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-pa-okb">
+                                        <rect key="frame" x="27" y="146" width="265" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQx-XG-aHx">
-                                        <rect key="frame" x="27" y="171" width="265" height="30"/>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQx-XG-aHx">
+                                        <rect key="frame" x="27" y="172" width="265" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="MDk-vY-FSU"/>
                                         </constraints>
@@ -56,31 +56,34 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaX-zj-Xb1">
-                                        <rect key="frame" x="198" y="209" width="94" height="12"/>
+                                        <rect key="frame" x="198" y="210" width="94" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="HqJ-We-7Ec"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <state key="normal" title="Forgot password?"/>
+                                        <state key="normal" title="Quên mật khẩu?"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-zy-841">
-                                        <rect key="frame" x="27" y="231" width="265" height="36"/>
+                                        <rect key="frame" x="27" y="232" width="265" height="36"/>
                                         <color key="backgroundColor" red="0.31067183609999999" green="0.3096658289" blue="0.77237409349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="Login">
+                                        <state key="normal" title="ĐĂNG NHẬP">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-di-pli">
-                                        <rect key="frame" x="96" y="275" width="127" height="12"/>
+                                        <rect key="frame" x="98.5" y="276" width="122" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="xlL-vV-PDM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <state key="normal" title="Don't have account yet?"/>
+                                        <state key="normal" title="Bạn chưa có tài khoản?"/>
+                                        <connections>
+                                            <segue destination="fFI-Ns-ezr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ZNl-uU-OhU"/>
+                                        </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-gX-7uG">
-                                        <rect key="frame" x="27" y="295" width="265" height="14.5"/>
+                                        <rect key="frame" x="27" y="296" width="265" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -118,7 +121,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-FF-jQ9">
-                                <rect key="frame" x="67.5" y="84.5" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="100" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="6HD-wf-eQA"/>
                                     <constraint firstAttribute="width" constant="240" id="syb-8z-AId"/>
@@ -129,7 +132,7 @@
                         <constraints>
                             <constraint firstItem="E2g-MV-xwZ" firstAttribute="top" secondItem="wNo-FF-jQ9" secondAttribute="bottom" constant="60" id="0cz-L2-JW5"/>
                             <constraint firstAttribute="bottom" secondItem="Nvn-fk-s5Q" secondAttribute="bottom" id="Drf-Y5-JVq"/>
-                            <constraint firstItem="wNo-FF-jQ9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-185" id="ROV-Ve-4GO"/>
+                            <constraint firstItem="wNo-FF-jQ9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-169.5" id="ROV-Ve-4GO"/>
                             <constraint firstAttribute="trailing" secondItem="Nvn-fk-s5Q" secondAttribute="trailing" id="SYG-P3-tT6"/>
                             <constraint firstItem="E2g-MV-xwZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ad7-n6-UeT"/>
                             <constraint firstItem="wNo-FF-jQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ekl-Sv-DaO"/>
@@ -142,15 +145,27 @@
                     <connections>
                         <outlet property="containerLoginView" destination="E2g-MV-xwZ" id="qoQ-MO-4L1"/>
                         <outlet property="emailLabel" destination="0fR-3M-BCf" id="Ox6-TZ-VGy"/>
+                        <outlet property="emailTextField" destination="ImL-Nt-ckx" id="OA3-c0-Xh4"/>
                         <outlet property="errorLabel" destination="cPb-gX-7uG" id="vhi-vY-KR1"/>
                         <outlet property="loginButton" destination="NT5-zy-841" id="9dd-5b-OMP"/>
                         <outlet property="loginLabel" destination="BsZ-bE-aLh" id="eLP-Y7-3S5"/>
                         <outlet property="passwordLabel" destination="JW9-pa-okb" id="Qim-iA-jwv"/>
+                        <outlet property="passwordTextField" destination="hQx-XG-aHx" id="OlU-TV-JPD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="54h-p7-3jP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="fFI-Ns-ezr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ca1-CD-f2K"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyz-xO-fOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="123"/>
         </scene>
     </scenes>
     <resources>

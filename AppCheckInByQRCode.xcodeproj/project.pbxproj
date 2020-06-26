@@ -17,6 +17,9 @@
 		7B4629E724A59558003B3168 /* AppCheckInByQRCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629E624A59558003B3168 /* AppCheckInByQRCodeTests.swift */; };
 		7B4629F424A596FA003B3168 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4629F324A596FA003B3168 /* CloudKit.framework */; };
 		7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */; };
+		7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B462A0024A5D661003B3168 /* SignUp.storyboard */; };
+		7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0224A5D687003B3168 /* SignUpViewController.swift */; };
+		7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		7B4629F124A596F4003B3168 /* AppCheckInByQRCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppCheckInByQRCode.entitlements; sourceTree = "<group>"; };
 		7B4629F324A596FA003B3168 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7B462A0024A5D661003B3168 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		7B462A0224A5D687003B3168 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				7B4629FC24A59D01003B3168 /* HelperMethod */,
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
 				7B4629FA24A5985F003B3168 /* Main */,
+				7B4629FF24A5D0C6003B3168 /* SignUp */,
 				7B4629F924A59857003B3168 /* Info */,
 				7B4629F824A5984A003B3168 /* CoreData */,
 			);
@@ -179,8 +186,18 @@
 			isa = PBXGroup;
 			children = (
 				7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */,
+				7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */,
 			);
 			path = HelperMethod;
+			sourceTree = "<group>";
+		};
+		7B4629FF24A5D0C6003B3168 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7B462A0024A5D661003B3168 /* SignUp.storyboard */,
+				7B462A0224A5D687003B3168 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +283,7 @@
 			files = (
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
+				7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */,
 				7B4629D424A59557003B3168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
 				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
+				7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */,
 				7B4629D124A59557003B3168 /* ViewController.swift in Sources */,
 				7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
