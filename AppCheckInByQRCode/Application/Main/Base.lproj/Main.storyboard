@@ -62,6 +62,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <state key="normal" title="Quên mật khẩu?"/>
+                                        <connections>
+                                            <segue destination="6Bb-DV-78R" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Bt1-AZ-kLw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-zy-841">
                                         <rect key="frame" x="27" y="232" width="265" height="36"/>
@@ -165,7 +168,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyz-xO-fOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="123"/>
+            <point key="canvasLocation" x="882" y="246"/>
+        </scene>
+        <!--ForgotPassword-->
+        <scene sceneID="uWJ-vO-Je0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForgotPassword" id="6Bb-DV-78R" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnH-nQ-qpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="10"/>
         </scene>
     </scenes>
     <resources>
