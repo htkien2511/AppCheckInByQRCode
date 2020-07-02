@@ -10,18 +10,21 @@
 		7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629CC24A59557003B3168 /* AppDelegate.swift */; };
 		7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629CE24A59557003B3168 /* SceneDelegate.swift */; };
 		7B4629D124A59557003B3168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629D024A59557003B3168 /* ViewController.swift */; };
-		7B4629D424A59557003B3168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629D224A59557003B3168 /* Main.storyboard */; };
+		7B4629D424A59557003B3168 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629D224A59557003B3168 /* Login.storyboard */; };
 		7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629D524A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld */; };
 		7B4629D924A59558003B3168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629D824A59558003B3168 /* Assets.xcassets */; };
 		7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4629DA24A59558003B3168 /* LaunchScreen.storyboard */; };
 		7B4629E724A59558003B3168 /* AppCheckInByQRCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629E624A59558003B3168 /* AppCheckInByQRCodeTests.swift */; };
-		7B4629F424A596FA003B3168 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4629F324A596FA003B3168 /* CloudKit.framework */; };
 		7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */; };
 		7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B462A0024A5D661003B3168 /* SignUp.storyboard */; };
 		7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0224A5D687003B3168 /* SignUpViewController.swift */; };
 		7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */; };
 		7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B462A0924A60319003B3168 /* ForgotPassword.storyboard */; };
 		7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */; };
+		7B68528B24AD8EBE00C59449 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528A24AD8EBE00C59449 /* API.swift */; };
+		7B68528D24AD902A00C59449 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528C24AD902A00C59449 /* DataManager.swift */; };
+		7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */; };
+		7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* HomeTab.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		7B4629CC24A59557003B3168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4629CE24A59557003B3168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B4629D024A59557003B3168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B4629D324A59557003B3168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B4629D324A59557003B3168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		7B4629D624A59557003B3168 /* AppCheckInByQRCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppCheckInByQRCode.xcdatamodel; sourceTree = "<group>"; };
 		7B4629D824A59558003B3168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4629DB24A59558003B3168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,10 @@
 		7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7B462A0924A60319003B3168 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7B68528A24AD8EBE00C59449 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7B68528C24AD902A00C59449 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		7B6852B424ADE88A00C59449 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4629F424A596FA003B3168 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,13 +131,16 @@
 		7B4629F524A597D9003B3168 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				7B68528924AD8EAE00C59449 /* API */,
+				7B6852B024ADE7BA00C59449 /* AppDelegate */,
+				7B4629F824A5984A003B3168 /* CoreData */,
 				7B4629FC24A59D01003B3168 /* HelperMethod */,
+				7B4629F924A59857003B3168 /* Info */,
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
-				7B4629FA24A5985F003B3168 /* Main */,
+				7B4629FA24A5985F003B3168 /* Login */,
+				7B6852B124ADE7CF00C59449 /* HomeTab */,
 				7B4629FF24A5D0C6003B3168 /* SignUp */,
 				7B462A0824A60301003B3168 /* ForgotPassword */,
-				7B4629F924A59857003B3168 /* Info */,
-				7B4629F824A5984A003B3168 /* CoreData */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -168,15 +177,13 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
-		7B4629FA24A5985F003B3168 /* Main */ = {
+		7B4629FA24A5985F003B3168 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7B4629D224A59557003B3168 /* Main.storyboard */,
+				7B4629D224A59557003B3168 /* Login.storyboard */,
 				7B4629D024A59557003B3168 /* ViewController.swift */,
-				7B4629CE24A59557003B3168 /* SceneDelegate.swift */,
-				7B4629CC24A59557003B3168 /* AppDelegate.swift */,
 			);
-			path = Main;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		7B4629FB24A5986A003B3168 /* LaunchScreen */ = {
@@ -212,6 +219,33 @@
 				7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		7B68528924AD8EAE00C59449 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7B68528A24AD8EBE00C59449 /* API.swift */,
+				7B68528C24AD902A00C59449 /* DataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7B6852B024ADE7BA00C59449 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629CC24A59557003B3168 /* AppDelegate.swift */,
+				7B4629CE24A59557003B3168 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7B6852B124ADE7CF00C59449 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */,
+				7B6852B424ADE88A00C59449 /* HomeTab.storyboard */,
+			);
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +333,8 @@
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
 				7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */,
-				7B4629D424A59557003B3168 /* Main.storyboard in Resources */,
+				7B4629D424A59557003B3168 /* Login.storyboard in Resources */,
+				7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,12 +353,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
+				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
 				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
 				7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */,
 				7B4629D124A59557003B3168 /* ViewController.swift in Sources */,
 				7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */,
+				7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
+				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
 				7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,12 +385,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B4629D224A59557003B3168 /* Main.storyboard */ = {
+		7B4629D224A59557003B3168 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7B4629D324A59557003B3168 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		7B4629DA24A59558003B3168 /* LaunchScreen.storyboard */ = {
