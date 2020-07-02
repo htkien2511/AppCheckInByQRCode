@@ -125,11 +125,11 @@
 		7B4629F524A597D9003B3168 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				7B462A0824A60301003B3168 /* ForgotPassword */,
 				7B4629FC24A59D01003B3168 /* HelperMethod */,
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
 				7B4629FA24A5985F003B3168 /* Main */,
 				7B4629FF24A5D0C6003B3168 /* SignUp */,
+				7B462A0824A60301003B3168 /* ForgotPassword */,
 				7B4629F924A59857003B3168 /* Info */,
 				7B4629F824A5984A003B3168 /* CoreData */,
 			);
@@ -508,7 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppCheckInByQRCode/Application/CoreData/AppCheckInByQRCode.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R3XHF7AHVR;
 				INFOPLIST_FILE = AppCheckInByQRCode/Application/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
