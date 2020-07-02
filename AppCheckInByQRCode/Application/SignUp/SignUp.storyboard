@@ -131,7 +131,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <state key="normal" title="Đã có tài khoản?"/>
                                                         <connections>
-                                                            <segue destination="oOp-5I-Qk7" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1fT-Ww-uu2"/>
+                                                            <action selector="hadAccountTapped:" destination="Uhs-7l-x7A" eventType="touchUpInside" id="0Zf-vr-tAY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-M4-43V">
@@ -253,14 +253,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fn-o4-PNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-304.34782608695656" y="-54.241071428571423"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="Zus-f1-JWM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="oOp-5I-Qk7" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jDS-gF-yMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="482" y="-133"/>
         </scene>
     </scenes>
     <resources>

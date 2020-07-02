@@ -102,6 +102,9 @@ class SignUpViewController: UIViewController {
     print("sign up button tapped")
   }
   
+  @IBAction func hadAccountTapped(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
 }
 
 // MARK: - Text Field Delegate
