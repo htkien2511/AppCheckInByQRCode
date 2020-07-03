@@ -25,6 +25,10 @@
 		7B68528D24AD902A00C59449 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528C24AD902A00C59449 /* DataManager.swift */; };
 		7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */; };
 		7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* HomeTab.storyboard */; };
+		7B6852BA24ADF00B00C59449 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B924ADF00B00C59449 /* HomeTabBarController.swift */; };
+		7B6852BC24ADF02C00C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852BB24ADF02C00C59449 /* HomeTabBar.storyboard */; };
+		7B6852BF24AED68100C59449 /* PresentEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852BD24AED68100C59449 /* PresentEventsCollectionViewCell.swift */; };
+		7B6852C024AED68100C59449 /* PresentEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852BE24AED68100C59449 /* PresentEventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		7B68528C24AD902A00C59449 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		7B6852B424ADE88A00C59449 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		7B6852B924ADF00B00C59449 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		7B6852BB24ADF02C00C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
+		7B6852BD24AED68100C59449 /* PresentEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852BE24AED68100C59449 /* PresentEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +146,12 @@
 				7B4629F924A59857003B3168 /* Info */,
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
 				7B4629FA24A5985F003B3168 /* Login */,
-				7B6852B124ADE7CF00C59449 /* HomeTab */,
+				7B6852B124ADE7CF00C59449 /* Main */,
 				7B4629FF24A5D0C6003B3168 /* SignUp */,
 				7B462A0824A60301003B3168 /* ForgotPassword */,
+				7B6852B624ADEEF900C59449 /* HomeTabBar */,
+				7B6852B724ADEF0100C59449 /* FavoriteTabBar */,
+				7B6852B824ADEF0900C59449 /* InformationTabBar */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -239,13 +250,38 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		7B6852B124ADE7CF00C59449 /* HomeTab */ = {
+		7B6852B124ADE7CF00C59449 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */,
 				7B6852B424ADE88A00C59449 /* HomeTab.storyboard */,
 			);
-			path = HomeTab;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7B6852B624ADEEF900C59449 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852B924ADF00B00C59449 /* HomeTabBarController.swift */,
+				7B6852BB24ADF02C00C59449 /* HomeTabBar.storyboard */,
+				7B6852BD24AED68100C59449 /* PresentEventsCollectionViewCell.swift */,
+				7B6852BE24AED68100C59449 /* PresentEventsCollectionViewCell.xib */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		7B6852B724ADEF0100C59449 /* FavoriteTabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoriteTabBar;
+			sourceTree = "<group>";
+		};
+		7B6852B824ADEF0900C59449 /* InformationTabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InformationTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6852BC24ADF02C00C59449 /* HomeTabBar.storyboard in Resources */,
+				7B6852C024AED68100C59449 /* PresentEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
@@ -352,8 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6852BF24AED68100C59449 /* PresentEventsCollectionViewCell.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
+				7B6852BA24ADF00B00C59449 /* HomeTabBarController.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
 				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
 				7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */,

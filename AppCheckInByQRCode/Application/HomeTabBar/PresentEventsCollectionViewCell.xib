@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PresentEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVA-uM-crF">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="172"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event-image" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-2W-ym2">
+                                <rect key="frame" x="5" y="8.5" width="155" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cCa-2W-ym2" secondAttribute="height" multiplier="1:1" id="lps-ON-6Tj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lễ hội Huda Beer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JvQ-s3-VHD">
+                                <rect key="frame" x="175" y="8.5" width="172" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-outline" translatesAutoresizingMaskIntoConstraints="NO" id="k0M-5U-bdb">
+                                <rect key="frame" x="175" y="133.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4aR-n0-2fy"/>
+                                    <constraint firstAttribute="width" constant="30" id="pxe-Vl-uSD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-white" translatesAutoresizingMaskIntoConstraints="NO" id="JAf-xG-W4H">
+                                <rect key="frame" x="175" y="103.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="767-PP-X1V"/>
+                                    <constraint firstAttribute="width" constant="30" id="yuH-tN-jBN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6m-zg-sjV">
+                                <rect key="frame" x="213" y="108" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yêu thích" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-j9-gUJ">
+                                <rect key="frame" x="213" y="138" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timesheet-white" translatesAutoresizingMaskIntoConstraints="NO" id="S8f-fa-E5W">
+                                <rect key="frame" x="175" y="70.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bB9-7Z-21m"/>
+                                    <constraint firstAttribute="width" constant="30" id="mg7-9g-Oqg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-2-22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyX-Tl-1f6">
+                                <rect key="frame" x="213" y="75" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.60392156862745094" blue="0.7803921568627451" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JAf-xG-W4H" firstAttribute="top" secondItem="S8f-fa-E5W" secondAttribute="bottom" constant="3" id="0Mb-dE-7yu"/>
+                            <constraint firstAttribute="trailing" secondItem="D6m-zg-sjV" secondAttribute="trailing" constant="8" id="334-gg-nWk"/>
+                            <constraint firstItem="uyX-Tl-1f6" firstAttribute="leading" secondItem="S8f-fa-E5W" secondAttribute="trailing" constant="8" id="4Xb-FN-Xtm"/>
+                            <constraint firstItem="D6m-zg-sjV" firstAttribute="leading" secondItem="JAf-xG-W4H" secondAttribute="trailing" constant="8" id="B6Z-jY-HaJ"/>
+                            <constraint firstItem="PDe-j9-gUJ" firstAttribute="leading" secondItem="k0M-5U-bdb" secondAttribute="trailing" constant="8" id="Beg-cN-X9y"/>
+                            <constraint firstItem="cCa-2W-ym2" firstAttribute="height" secondItem="OVA-uM-crF" secondAttribute="height" multiplier="0.9" id="GsS-Fp-oGl"/>
+                            <constraint firstItem="D6m-zg-sjV" firstAttribute="centerY" secondItem="JAf-xG-W4H" secondAttribute="centerY" id="Oef-az-Flx"/>
+                            <constraint firstAttribute="trailing" secondItem="JvQ-s3-VHD" secondAttribute="trailing" constant="8" id="Olv-0e-me0"/>
+                            <constraint firstItem="JvQ-s3-VHD" firstAttribute="top" secondItem="cCa-2W-ym2" secondAttribute="top" id="SlP-jP-9EC"/>
+                            <constraint firstItem="k0M-5U-bdb" firstAttribute="bottom" secondItem="cCa-2W-ym2" secondAttribute="bottom" id="Vqh-kw-Prb"/>
+                            <constraint firstItem="S8f-fa-E5W" firstAttribute="top" secondItem="JvQ-s3-VHD" secondAttribute="bottom" constant="2" id="W5f-EG-yog"/>
+                            <constraint firstAttribute="trailing" secondItem="PDe-j9-gUJ" secondAttribute="trailing" constant="8" id="X6N-os-zKI"/>
+                            <constraint firstItem="k0M-5U-bdb" firstAttribute="leading" secondItem="cCa-2W-ym2" secondAttribute="trailing" constant="15" id="YQd-DT-vqK"/>
+                            <constraint firstItem="JvQ-s3-VHD" firstAttribute="leading" secondItem="cCa-2W-ym2" secondAttribute="trailing" constant="15" id="bFS-vA-nz0"/>
+                            <constraint firstItem="JAf-xG-W4H" firstAttribute="leading" secondItem="cCa-2W-ym2" secondAttribute="trailing" constant="15" id="jHR-x1-aaC"/>
+                            <constraint firstItem="k0M-5U-bdb" firstAttribute="top" secondItem="JAf-xG-W4H" secondAttribute="bottom" id="koL-Ra-Sss"/>
+                            <constraint firstItem="cCa-2W-ym2" firstAttribute="centerY" secondItem="OVA-uM-crF" secondAttribute="centerY" id="n4Q-5h-ESF"/>
+                            <constraint firstAttribute="trailing" secondItem="uyX-Tl-1f6" secondAttribute="trailing" constant="8" id="pdE-Zf-UIw"/>
+                            <constraint firstItem="S8f-fa-E5W" firstAttribute="leading" secondItem="cCa-2W-ym2" secondAttribute="trailing" constant="15" id="raR-gd-4s2"/>
+                            <constraint firstItem="PDe-j9-gUJ" firstAttribute="centerY" secondItem="k0M-5U-bdb" secondAttribute="centerY" id="uZR-Y0-Ejd"/>
+                            <constraint firstItem="uyX-Tl-1f6" firstAttribute="centerY" secondItem="S8f-fa-E5W" secondAttribute="centerY" id="vPC-hI-yCW"/>
+                            <constraint firstItem="cCa-2W-ym2" firstAttribute="leading" secondItem="OVA-uM-crF" secondAttribute="leading" constant="5" id="wAA-CK-LVV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="OVA-uM-crF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5An-yG-Y1g"/>
+                <constraint firstItem="OVA-uM-crF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B3d-eY-Ejp"/>
+                <constraint firstAttribute="trailing" secondItem="OVA-uM-crF" secondAttribute="trailing" id="H4t-fX-51v"/>
+                <constraint firstAttribute="bottom" secondItem="OVA-uM-crF" secondAttribute="bottom" id="Itq-BV-Dkg"/>
+            </constraints>
+            <size key="customSize" width="192" height="219"/>
+            <connections>
+                <outlet property="containerViewCell" destination="OVA-uM-crF" id="KYQ-OO-CTE"/>
+                <outlet property="eventImageView" destination="cCa-2W-ym2" id="LT3-02-H6x"/>
+            </connections>
+            <point key="canvasLocation" x="239.85507246376812" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="event-image" width="640" height="433"/>
+        <image name="heart-outline" width="30" height="30"/>
+        <image name="location-white" width="30" height="30"/>
+        <image name="timesheet-white" width="30" height="30"/>
+    </resources>
+</document>
