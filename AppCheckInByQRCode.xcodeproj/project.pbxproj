@@ -27,6 +27,8 @@
 		7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* HomeTab.storyboard */; };
 		7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */; };
 		7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */; };
+		7B6852CA24AF24C600C59449 /* PresentEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */; };
+		7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		7B6852B424ADE88A00C59449 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 		7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,8 @@
 			children = (
 				7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */,
 				7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */,
+				7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */,
+				7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */,
 			);
 			path = HomeTabBar;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */,
+				7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
@@ -367,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6852CA24AF24C600C59449 /* PresentEventsCollectionViewCell.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
