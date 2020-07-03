@@ -25,6 +25,8 @@
 		7B68528D24AD902A00C59449 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528C24AD902A00C59449 /* DataManager.swift */; };
 		7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */; };
 		7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* HomeTab.storyboard */; };
+		7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */; };
+		7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		7B68528C24AD902A00C59449 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B6852B224ADE85E00C59449 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		7B6852B424ADE88A00C59449 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
+		7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
 				7B4629FA24A5985F003B3168 /* Login */,
 				7B6852B124ADE7CF00C59449 /* HomeTab */,
+				7B6852C324AF1F9400C59449 /* HomeTabBar */,
 				7B4629FF24A5D0C6003B3168 /* SignUp */,
 				7B462A0824A60301003B3168 /* ForgotPassword */,
 			);
@@ -248,6 +253,15 @@
 			path = HomeTab;
 			sourceTree = "<group>";
 		};
+		7B6852C324AF1F9400C59449 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */,
+				7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
@@ -361,6 +376,7 @@
 				7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */,
 				7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
+				7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */,
 				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
 				7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */,
 			);
