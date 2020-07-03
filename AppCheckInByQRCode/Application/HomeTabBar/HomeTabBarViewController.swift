@@ -31,6 +31,12 @@ class HomeTabBarViewController: UIViewController {
     presentEventCollectionView.dataSource = self
     presentEventCollectionView.delegate = self
     presentEventCollectionView.showsHorizontalScrollIndicator = false
+    
+    latestEventCollectionView.register(UINib(nibName: "LatestEventsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+    
+    latestEventCollectionView.dataSource = self
+    latestEventCollectionView.delegate = self
+    latestEventCollectionView.showsVerticalScrollIndicator = false
   }
 }
 
@@ -42,17 +48,22 @@ extension HomeTabBarViewController: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
-                                                  for: indexPath) as! PresentEventsCollectionViewCell
-    
-    
-    cell.imageViewCell.layer.cornerRadius = CGFloat(20)
-    cell.shadow()
-    cell.layer.shadowOffset = CGSize(width: 0, height: 0)
-    cell.layer.masksToBounds = false
-
-    return cell
+    if collectionView == presentEventCollectionView {
+      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+      for: indexPath) as! PresentEventsCollectionViewCell
+      cell.imageViewCell.layer.cornerRadius = CGFloat(20)
+      cell.shadow()
+      cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+      cell.layer.masksToBounds = false
+      return cell
+    }
+    // latestEventCollectionView
+    else {
+      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+      for: indexPath) as! LatestEventsCollectionViewCell
+      
+      return cell
+    }
   }
   
 }
@@ -63,12 +74,22 @@ extension HomeTabBarViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView,
                       layout collectionViewLayout: UICollectionViewLayout,
                       sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let itemsPerCol: CGFloat = 1
-    let padding: CGFloat = 16
-    let collectionViewHeight: CGFloat = collectionView.frame.height - (padding * (itemsPerCol - 1)) - (edgeInset * 2)
-    let heightPerItem: CGFloat = collectionViewHeight / itemsPerCol
-    let widthPerItem: CGFloat = collectionView.frame.width * 0.8
-    return CGSize(width: widthPerItem, height: heightPerItem)
+    if collectionView == presentEventCollectionView {
+      let itemsPerCol: CGFloat = 1
+      let padding: CGFloat = 16
+      let collectionViewHeight: CGFloat = collectionView.frame.height - (padding * (itemsPerCol - 1)) - (edgeInset * 2)
+      let heightPerItem: CGFloat = collectionViewHeight / itemsPerCol
+      let widthPerItem: CGFloat = collectionView.frame.width * 0.8
+      return CGSize(width: widthPerItem, height: heightPerItem)
+    }
+    else {
+      let itemsPerRow: CGFloat = 1
+      let padding: CGFloat = 10
+      let collectionViewWidth: CGFloat = collectionView.frame.width - (padding * (itemsPerRow - 1)) - (edgeInset * 2)
+      let widthPerItem: CGFloat = collectionViewWidth / itemsPerRow
+      let heightPerItem: CGFloat = widthPerItem/2 > 160 ? widthPerItem/2 : 160
+      return CGSize(width: widthPerItem, height: heightPerItem)
+    }
   }
   
   func collectionView(_ collectionView: UICollectionView,
@@ -80,6 +101,11 @@ extension HomeTabBarViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView,
                       layout collectionViewLayout: UICollectionViewLayout,
                       insetForSectionAt section: Int) -> UIEdgeInsets {
-    return UIEdgeInsets(top: 0, left: edgeInset, bottom: 0, right: edgeInset)
+    if collectionView == presentEventCollectionView {
+      return UIEdgeInsets(top: 0, left: edgeInset, bottom: 0, right: edgeInset)
+    }
+    else {
+      return UIEdgeInsets(top: edgeInset, left: edgeInset, bottom: edgeInset, right: edgeInset)
+    }
   }
 }

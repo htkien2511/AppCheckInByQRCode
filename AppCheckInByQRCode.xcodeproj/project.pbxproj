@@ -29,6 +29,8 @@
 		7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */; };
 		7B6852CA24AF24C600C59449 /* PresentEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */; };
 		7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */; };
+		7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852CE24AF318400C59449 /* LatestEventsCollectionViewCell.swift */; };
+		7B6852D124AF318400C59449 /* LatestEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentEventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentEventsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B6852CE24AF318400C59449 /* LatestEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,12 +264,30 @@
 		7B6852C324AF1F9400C59449 /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				7B6852CD24AF316D00C59449 /* LatestEvent */,
+				7B6852CC24AF314F00C59449 /* PresentEvent */,
 				7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */,
 				7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		7B6852CC24AF314F00C59449 /* PresentEvent */ = {
+			isa = PBXGroup;
+			children = (
 				7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */,
 				7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */,
 			);
-			path = HomeTabBar;
+			path = PresentEvent;
+			sourceTree = "<group>";
+		};
+		7B6852CD24AF316D00C59449 /* LatestEvent */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852CE24AF318400C59449 /* LatestEventsCollectionViewCell.swift */,
+				7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */,
+			);
+			path = LatestEvent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +373,7 @@
 			files = (
 				7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */,
 				7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */,
+				7B6852D124AF318400C59449 /* LatestEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
@@ -386,6 +409,7 @@
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
 				7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */,
 				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
+				7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */,
 				7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
