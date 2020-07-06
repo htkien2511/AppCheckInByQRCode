@@ -14,6 +14,7 @@ class HomeTabBarViewController: UIViewController {
   @IBOutlet weak var upcomingEventCollectionView: UICollectionView!
   @IBOutlet weak var latestEventCollectionView: UICollectionView!
   @IBOutlet weak var completedEventCollectionView: UICollectionView!
+  @IBOutlet weak var searchBar: UISearchBar!
   
   // MARK: - Properties
   let cellIdentifier = "presentEventsCell"
@@ -25,6 +26,8 @@ class HomeTabBarViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    searchBar.delegate = self
+    searchBar.layer.borderWidth = CGFloat(1)
     setUpCollectionView()
   }
   
@@ -47,6 +50,9 @@ class HomeTabBarViewController: UIViewController {
     completedEventCollectionView.delegate = self
     completedEventCollectionView.showsVerticalScrollIndicator = false
   }
+  
+  // MARK: - Action
+  
 }
 
 // MARK: - Collection View Data Source
@@ -127,5 +133,15 @@ extension HomeTabBarViewController: UICollectionViewDelegateFlowLayout {
     else {
       return UIEdgeInsets(top: edgeInset, left: edgeInset, bottom: edgeInset, right: edgeInset)
     }
+  }
+}
+
+extension HomeTabBarViewController: UISearchBarDelegate {
+  func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "SearchEvent", bundle:nil)
+
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "searchEventView") as! SearchBarViewController
+    nextViewController.modalPresentationStyle = .fullScreen
+    self.present(nextViewController, animated:true, completion:nil)
   }
 }

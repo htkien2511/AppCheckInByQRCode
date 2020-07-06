@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4z6-Ts-a7D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Bar View Controller-->
+        <scene sceneID="L77-xO-qT2">
+            <objects>
+                <viewController storyboardIdentifier="searchEventView" id="4z6-Ts-a7D" customClass="SearchBarViewController" customModule="AppCheckInByQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uG8-vF-wPa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15J-d0-LTi">
+                                <rect key="frame" x="186" y="311" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fg8-Rg-0aG" userLabel="Search View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2ws-oE-bcR">
+                                        <rect key="frame" x="60" y="0.0" width="354" height="60"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-iV-9wM">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="acv-cr-Yla"/>
+                                        </constraints>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="4z6-Ts-a7D" eventType="touchUpInside" id="0Ls-Ty-Cer"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Las-iV-9wM" firstAttribute="top" secondItem="Fg8-Rg-0aG" secondAttribute="top" id="2oe-bN-2t1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Las-iV-9wM" secondAttribute="bottom" id="8zk-Fv-38g"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ws-oE-bcR" secondAttribute="trailing" id="Eob-8O-FUh"/>
+                                    <constraint firstItem="2ws-oE-bcR" firstAttribute="leading" secondItem="Las-iV-9wM" secondAttribute="trailing" id="Ja5-AG-Edf"/>
+                                    <constraint firstItem="Las-iV-9wM" firstAttribute="leading" secondItem="Fg8-Rg-0aG" secondAttribute="leading" id="f9e-tI-zpB"/>
+                                    <constraint firstItem="2ws-oE-bcR" firstAttribute="top" secondItem="Fg8-Rg-0aG" secondAttribute="top" id="jH8-lE-id2"/>
+                                    <constraint firstAttribute="height" constant="60" id="jJG-T5-jTA"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ws-oE-bcR" secondAttribute="bottom" id="vqU-yx-IY6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sky-rh-3fy" firstAttribute="trailing" secondItem="Fg8-Rg-0aG" secondAttribute="trailing" id="1kE-Lc-n0c"/>
+                            <constraint firstItem="Fg8-Rg-0aG" firstAttribute="leading" secondItem="uG8-vF-wPa" secondAttribute="leading" id="WaR-8c-0Ye"/>
+                            <constraint firstItem="Fg8-Rg-0aG" firstAttribute="top" secondItem="sky-rh-3fy" secondAttribute="top" id="xjq-l4-tyb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sky-rh-3fy"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="2ws-oE-bcR" id="zEO-sf-wiz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Sx-li-fW4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="167.41071428571428"/>
+        </scene>
+    </scenes>
+</document>

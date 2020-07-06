@@ -18,9 +18,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUM-Am-PG1" userLabel="Search View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="60"/>
-                                <color key="backgroundColor" red="0.0" green="0.60392156862745094" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xD6-io-OFO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="xD6-io-OFO" firstAttribute="top" secondItem="uUM-Am-PG1" secondAttribute="top" id="5OJ-Fw-wRD"/>
+                                    <constraint firstAttribute="bottom" secondItem="xD6-io-OFO" secondAttribute="bottom" id="O3y-CI-6Kx"/>
                                     <constraint firstAttribute="height" constant="60" id="Xtj-rH-qan"/>
+                                    <constraint firstAttribute="trailing" secondItem="xD6-io-OFO" secondAttribute="trailing" id="sXS-n4-bhj"/>
+                                    <constraint firstItem="xD6-io-OFO" firstAttribute="leading" secondItem="uUM-Am-PG1" secondAttribute="leading" id="wT7-mI-QWh"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-Dp-cpa">
@@ -32,10 +43,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-hV-mEG" userLabel="Upcoming Events Container View">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYV-zi-3t2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYV-zi-3t2">
                                                         <rect key="frame" x="16" y="16" width="205" height="30"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" red="0.0" green="0.60392156860000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-ey-Yih">
@@ -48,7 +59,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="68Q-Ye-vUd" customClass="UpcomingEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCells" id="68Q-Ye-vUd" customClass="UpcomingEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HGT-Ax-EnO">
@@ -58,15 +69,24 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="034-Ie-P8J">
+                                                        <rect key="frame" x="343" y="19.5" width="55" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <state key="normal" title="View all">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="dyc-ey-Yih" firstAttribute="leading" secondItem="KTz-hV-mEG" secondAttribute="leading" id="2Lw-rC-n1Y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="034-Ie-P8J" secondAttribute="trailing" constant="16" id="3yf-Hj-pFI"/>
+                                                    <constraint firstItem="034-Ie-P8J" firstAttribute="firstBaseline" secondItem="oYV-zi-3t2" secondAttribute="firstBaseline" id="Cap-Ad-p2h"/>
                                                     <constraint firstAttribute="height" constant="350" id="NUV-2d-JXV"/>
                                                     <constraint firstItem="oYV-zi-3t2" firstAttribute="top" secondItem="KTz-hV-mEG" secondAttribute="top" constant="16" id="V4p-sM-Cas"/>
+                                                    <constraint firstItem="034-Ie-P8J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oYV-zi-3t2" secondAttribute="trailing" constant="16" id="VvD-3S-o9H"/>
                                                     <constraint firstAttribute="bottom" secondItem="dyc-ey-Yih" secondAttribute="bottom" id="dKb-2h-GFc"/>
                                                     <constraint firstItem="oYV-zi-3t2" firstAttribute="leading" secondItem="KTz-hV-mEG" secondAttribute="leading" constant="16" id="jqz-pK-FIm"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oYV-zi-3t2" secondAttribute="trailing" constant="8" id="tOv-R4-eYg"/>
                                                     <constraint firstItem="dyc-ey-Yih" firstAttribute="top" secondItem="oYV-zi-3t2" secondAttribute="bottom" id="td7-Rf-Oqu"/>
                                                     <constraint firstAttribute="trailing" secondItem="dyc-ey-Yih" secondAttribute="trailing" id="xI3-dS-RbO"/>
                                                 </constraints>
@@ -74,10 +94,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEb-Sz-6ZW" userLabel="Latest Events Container View">
                                                 <rect key="frame" x="0.0" y="350" width="414" height="350"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o83-MH-lza">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Latest Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o83-MH-lza">
                                                         <rect key="frame" x="16" y="16" width="158.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" red="0.0" green="0.60392156860000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lbj-kd-pZE">
@@ -90,7 +110,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z1T-lw-Ndp" customClass="LatestEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LatestCells" id="z1T-lw-Ndp" customClass="LatestEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="12a-X1-Lh6">
@@ -105,7 +125,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="4lI-3o-6rv"/>
                                                     <constraint firstItem="Lbj-kd-pZE" firstAttribute="leading" secondItem="SEb-Sz-6ZW" secondAttribute="leading" id="GJD-Wu-sVs"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o83-MH-lza" secondAttribute="trailing" constant="8" id="GwC-Ui-Ft7"/>
                                                     <constraint firstAttribute="bottom" secondItem="Lbj-kd-pZE" secondAttribute="bottom" id="fSi-Wz-aiK"/>
                                                     <constraint firstItem="o83-MH-lza" firstAttribute="leading" secondItem="SEb-Sz-6ZW" secondAttribute="leading" constant="16" id="ikl-vQ-LGe"/>
                                                     <constraint firstAttribute="trailing" secondItem="Lbj-kd-pZE" secondAttribute="trailing" id="s1S-eh-kvQ"/>
@@ -113,13 +132,20 @@
                                                     <constraint firstItem="Lbj-kd-pZE" firstAttribute="top" secondItem="o83-MH-lza" secondAttribute="bottom" id="y1p-q2-X1u"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6h-Vc-7Hx">
+                                                <rect key="frame" x="343" y="369.5" width="55" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="View all">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-Ii-m5y" userLabel="Latest Events Container View">
                                                 <rect key="frame" x="0.0" y="700" width="414" height="350"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-eW-6gu">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Completed Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-eW-6gu">
                                                         <rect key="frame" x="16" y="16" width="214" height="30"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" red="0.0" green="0.60392156860000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D4c-VZ-6I0">
@@ -132,7 +158,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2rn-K8-BD3" customClass="LatestEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="completedCells" id="2rn-K8-BD3" customClass="LatestEventsCollectionViewCell" customModule="AppCheckInByQRCode" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HD5-nc-pp6">
@@ -142,6 +168,13 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-30-b2i">
+                                                        <rect key="frame" x="343" y="19.5" width="55" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <state key="normal" title="View all">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -150,19 +183,24 @@
                                                     <constraint firstItem="D4c-VZ-6I0" firstAttribute="top" secondItem="eEj-eW-6gu" secondAttribute="bottom" id="9Y0-UF-bKK"/>
                                                     <constraint firstAttribute="trailing" secondItem="D4c-VZ-6I0" secondAttribute="trailing" id="Ejn-ji-8o5"/>
                                                     <constraint firstItem="eEj-eW-6gu" firstAttribute="leading" secondItem="jQk-Ii-m5y" secondAttribute="leading" constant="16" id="Qgk-ye-QMI"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEj-eW-6gu" secondAttribute="trailing" constant="8" id="els-pG-QMS"/>
+                                                    <constraint firstItem="lgh-30-b2i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eEj-eW-6gu" secondAttribute="trailing" constant="16" id="XRr-GE-PQh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lgh-30-b2i" secondAttribute="trailing" constant="16" id="bf8-Ju-i5z"/>
                                                     <constraint firstAttribute="height" constant="350" id="gVp-3S-PqC"/>
+                                                    <constraint firstItem="lgh-30-b2i" firstAttribute="firstBaseline" secondItem="eEj-eW-6gu" secondAttribute="firstBaseline" id="jF3-IE-UF4"/>
                                                     <constraint firstItem="eEj-eW-6gu" firstAttribute="top" secondItem="jQk-Ii-m5y" secondAttribute="top" constant="16" id="xLs-Zo-tCv"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="j6h-Vc-7Hx" firstAttribute="firstBaseline" secondItem="o83-MH-lza" secondAttribute="firstBaseline" id="0w4-bw-Wxr"/>
                                             <constraint firstItem="KTz-hV-mEG" firstAttribute="leading" secondItem="8xG-ng-O7J" secondAttribute="leading" id="2a7-bB-IOx"/>
                                             <constraint firstAttribute="height" constant="1080" id="3Os-D4-dxn"/>
                                             <constraint firstItem="jQk-Ii-m5y" firstAttribute="leading" secondItem="8xG-ng-O7J" secondAttribute="leading" id="49M-Mv-Bm1"/>
+                                            <constraint firstAttribute="trailing" secondItem="j6h-Vc-7Hx" secondAttribute="trailing" constant="16" id="6Pr-Tl-Blc"/>
                                             <constraint firstAttribute="trailing" secondItem="KTz-hV-mEG" secondAttribute="trailing" id="Ikl-gL-AvZ"/>
                                             <constraint firstItem="jQk-Ii-m5y" firstAttribute="top" secondItem="SEb-Sz-6ZW" secondAttribute="bottom" id="LHZ-e2-qCb"/>
+                                            <constraint firstItem="j6h-Vc-7Hx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o83-MH-lza" secondAttribute="trailing" constant="16" id="NVC-ob-ETA"/>
                                             <constraint firstAttribute="trailing" secondItem="jQk-Ii-m5y" secondAttribute="trailing" id="WA4-gZ-Kpf"/>
                                             <constraint firstItem="KTz-hV-mEG" firstAttribute="top" secondItem="8xG-ng-O7J" secondAttribute="top" id="jUh-IK-Bex"/>
                                             <constraint firstItem="SEb-Sz-6ZW" firstAttribute="top" secondItem="KTz-hV-mEG" secondAttribute="bottom" id="lnP-5c-6Jm"/>
@@ -197,6 +235,7 @@
                     <connections>
                         <outlet property="completedEventCollectionView" destination="D4c-VZ-6I0" id="ML4-g8-afB"/>
                         <outlet property="latestEventCollectionView" destination="Lbj-kd-pZE" id="DtT-cT-dU7"/>
+                        <outlet property="searchBar" destination="xD6-io-OFO" id="SpZ-SX-JPc"/>
                         <outlet property="upcomingEventCollectionView" destination="dyc-ey-Yih" id="Ahe-rz-epD"/>
                     </connections>
                 </viewController>
