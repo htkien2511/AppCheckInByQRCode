@@ -24,7 +24,7 @@
 		7B68528B24AD8EBE00C59449 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528A24AD8EBE00C59449 /* API.swift */; };
 		7B68528D24AD902A00C59449 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528C24AD902A00C59449 /* DataManager.swift */; };
 		7B6852B324ADE85E00C59449 /* ManagerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */; };
-		7B6852B524ADE88A00C59449 /* ManagerTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* ManagerTabBarViewController.storyboard */; };
+		7B6852B524ADE88A00C59449 /* ManagerTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */; };
 		7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */; };
 		7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */; };
 		7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C824AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift */; };
@@ -79,7 +79,7 @@
 		7B68528A24AD8EBE00C59449 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7B68528C24AD902A00C59449 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTabBarViewController.swift; sourceTree = "<group>"; };
-		7B6852B424ADE88A00C59449 /* ManagerTabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerTabBarViewController.storyboard; sourceTree = "<group>"; };
+		7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerTabBar.storyboard; sourceTree = "<group>"; };
 		7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 		7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		7B6852C824AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */,
-				7B6852B424ADE88A00C59449 /* ManagerTabBarViewController.storyboard */,
+				7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */,
 			);
 			path = ManagerTabBarViewController;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
 				7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */,
 				7B4629D424A59557003B3168 /* Login.storyboard in Resources */,
-				7B6852B524ADE88A00C59449 /* ManagerTabBarViewController.storyboard in Resources */,
+				7B6852B524ADE88A00C59449 /* ManagerTabBar.storyboard in Resources */,
 				7B6852E324B2CFFB00C59449 /* ViewAllEvents.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
