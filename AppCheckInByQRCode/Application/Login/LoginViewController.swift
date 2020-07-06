@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
   
   // MARK: - Outlets
   @IBOutlet weak var containerLoginView: UIView!
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - Text Field Delegate
-extension ViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
   // move into password textfield
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     let nextTag = textField.tag + 1
