@@ -35,6 +35,8 @@
 		7B6852D624B2B93100C59449 /* CompletedEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852D424B2B93100C59449 /* CompletedEventsCollectionViewCell.xib */; };
 		7B6852D924B2C27200C59449 /* SearchEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852D824B2C27200C59449 /* SearchEvent.storyboard */; };
 		7B6852DB24B2C2B600C59449 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852DA24B2C2B600C59449 /* SearchBarViewController.swift */; };
+		7B6852DE24B2C64500C59449 /* InformationUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852DD24B2C64500C59449 /* InformationUser.storyboard */; };
+		7B6852E024B2C68F00C59449 /* InformationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852DF24B2C68F00C59449 /* InformationUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		7B6852D424B2B93100C59449 /* CompletedEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7B6852D824B2C27200C59449 /* SearchEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchEvent.storyboard; sourceTree = "<group>"; };
 		7B6852DA24B2C2B600C59449 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		7B6852DD24B2C64500C59449 /* InformationUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InformationUser.storyboard; sourceTree = "<group>"; };
+		7B6852DF24B2C68F00C59449 /* InformationUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 				7B6852B124ADE7CF00C59449 /* HomeTab */,
 				7B6852C324AF1F9400C59449 /* HomeTabBar */,
 				7B6852D724B2BE7000C59449 /* SearchEvent */,
+				7B6852DC24B2C62500C59449 /* InformationUser */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -318,6 +323,15 @@
 			path = SearchEvent;
 			sourceTree = "<group>";
 		};
+		7B6852DC24B2C62500C59449 /* InformationUser */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852DD24B2C64500C59449 /* InformationUser.storyboard */,
+				7B6852DF24B2C68F00C59449 /* InformationUserViewController.swift */,
+			);
+			path = InformationUser;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +419,7 @@
 				7B6852D624B2B93100C59449 /* CompletedEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
+				7B6852DE24B2C64500C59449 /* InformationUser.storyboard in Resources */,
 				7B6852D924B2C27200C59449 /* SearchEvent.storyboard in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
 				7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */,
@@ -429,6 +444,7 @@
 			files = (
 				7B6852D524B2B93100C59449 /* CompletedEventsCollectionViewCell.swift in Sources */,
 				7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */,
+				7B6852E024B2C68F00C59449 /* InformationUserViewController.swift in Sources */,
 				7B6852DB24B2C2B600C59449 /* SearchBarViewController.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
