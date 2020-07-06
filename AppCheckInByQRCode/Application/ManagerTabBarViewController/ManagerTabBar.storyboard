@@ -36,7 +36,7 @@
         <!--Manager Tab Bar View Controller-->
         <scene sceneID="PFb-7j-BBW">
             <objects>
-                <tabBarController id="2q3-55-8Zi" customClass="ManagerTabBarViewController" customModule="AppCheckInByQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="managerTabBar" id="2q3-55-8Zi" customClass="ManagerTabBarViewController" customModule="AppCheckInByQRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbi-x2-B6O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

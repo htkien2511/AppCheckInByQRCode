@@ -122,7 +122,9 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailContainerView" destination="aZF-Gq-t3W" id="qJs-DH-Ase"/>
+                        <outlet property="emailLabel" destination="sQb-8d-BGg" id="XcB-HZ-Qe0"/>
                         <outlet property="generalContainerView" destination="hk3-HB-ta9" id="Q50-Wm-v2x"/>
+                        <outlet property="nameLabel" destination="ewV-Kt-k9Y" id="kRH-hR-3Jo"/>
                         <outlet property="userImageView" destination="ryB-JF-WN8" id="vOD-tO-EuI"/>
                     </connections>
                 </viewController>

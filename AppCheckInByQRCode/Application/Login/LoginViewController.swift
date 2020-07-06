@@ -107,7 +107,15 @@ class LoginViewController: UIViewController {
       if error != nil {
         print(error!)
       } else {
-        print(user!.user.name)
+        DispatchQueue.main.async {
+          let storyBoard : UIStoryboard = UIStoryboard(name: "ManagerTabBar", bundle:nil)
+          
+          let nextViewController = storyBoard.instantiateViewController(withIdentifier: "managerTabBar") as! ManagerTabBarViewController
+          nextViewController.modalPresentationStyle = .fullScreen
+          nextViewController.modalTransitionStyle = .crossDissolve
+          self.present(nextViewController, animated:true, completion:nil)
+        }
+        SingletonUser.sharedManager.user = user!
       }
     }
   }

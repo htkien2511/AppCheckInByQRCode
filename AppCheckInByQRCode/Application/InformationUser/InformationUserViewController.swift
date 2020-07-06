@@ -14,13 +14,22 @@ class InformationUserViewController: UIViewController {
   @IBOutlet weak var generalContainerView: UIView!
   @IBOutlet weak var detailContainerView: UIView!
   @IBOutlet weak var userImageView: UIImageView!
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var emailLabel: UILabel!
   
   // MARK: -
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setUpData()
     setUpContainerView()
     setUpElements()
+  }
+  
+  func setUpData() {
+    let user = SingletonUser.sharedManager.user!
+    nameLabel.text = user.user.name
+    emailLabel.text = user.user.email
   }
   
   func setUpContainerView() {
