@@ -88,6 +88,29 @@ class LoginViewController: UIViewController {
     passwordLabel.shadow(color: UIColor.black.cgColor, opacity: 0.1, radius: 1)
     loginButton.titleLabel?.shadow()
   }
+  
+  // MARK: - Action
+  @IBAction func loginButtonTapped(_ sender: UIButton) {
+    let email = emailTextField.text!
+    let password = passwordTextField.text!
+    if Validation.isValid(email: email) {
+      checkLogin(email: email, password: password)
+    } else {
+      errorLabel.isHidden = false
+      errorLabel.text = "Email invalid"
+    }
+  }
+  
+  private func checkLogin(email: String, password: String) {
+    let dataManager = DataManager(baseURL: API.AuthenticatedBaseURL)
+    dataManager.login(email: email, password: password) { (user, error) in
+      if error != nil {
+        print(error!)
+      } else {
+        print(user!.user.name)
+      }
+    }
+  }
 }
 
 // MARK: - Text Field Delegate
@@ -100,7 +123,14 @@ extension LoginViewController: UITextFieldDelegate {
       nextResponder.becomeFirstResponder()
     } else {
       textField.resignFirstResponder()
-      print("Pass data to database")
+      let email = emailTextField.text!
+      let password = passwordTextField.text!
+      if Validation.isValid(email: email) {
+        checkLogin(email: email, password: password)
+      } else {
+        errorLabel.isHidden = false
+        errorLabel.text = "Email invalid"
+      }
     }
     return true
   }
