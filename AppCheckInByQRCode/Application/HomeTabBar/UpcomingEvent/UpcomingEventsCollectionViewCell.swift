@@ -1,5 +1,5 @@
 //
-//  LatestEventsCollectionViewCell.swift
+//  PresentEventsCollectionViewCell.swift
 //  AppCheckInByQRCode
 //
 //  Created by Hoang Trong Kien on 7/3/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class LatestEventsCollectionViewCell: UICollectionViewCell {
-  
+class UpcomingEventsCollectionViewCell: UICollectionViewCell {
+
   @IBOutlet weak var containerViewCell: UIView!
   @IBOutlet weak var imageViewCell: UIImageView!
   override func awakeFromNib() {
-    super.awakeFromNib()
-    // Initialization code
-  }
-  
+        super.awakeFromNib()
+        // Initialization code
+    }
+
 }

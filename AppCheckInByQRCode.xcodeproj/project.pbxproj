@@ -27,10 +27,12 @@
 		7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* HomeTab.storyboard */; };
 		7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */; };
 		7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */; };
-		7B6852CA24AF24C600C59449 /* PresentEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */; };
-		7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */; };
+		7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852C824AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift */; };
+		7B6852CB24AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C924AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib */; };
 		7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852CE24AF318400C59449 /* LatestEventsCollectionViewCell.swift */; };
 		7B6852D124AF318400C59449 /* LatestEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */; };
+		7B6852D524B2B93100C59449 /* CompletedEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852D324B2B93100C59449 /* CompletedEventsCollectionViewCell.swift */; };
+		7B6852D624B2B93100C59449 /* CompletedEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852D424B2B93100C59449 /* CompletedEventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +72,12 @@
 		7B6852B424ADE88A00C59449 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 		7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
-		7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentEventsCollectionViewCell.swift; sourceTree = "<group>"; };
-		7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentEventsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B6852C824AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852C924AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7B6852CE24AF318400C59449 /* LatestEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestEventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestEventsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B6852D324B2B93100C59449 /* CompletedEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852D424B2B93100C59449 /* CompletedEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,21 +268,22 @@
 		7B6852C324AF1F9400C59449 /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				7B6852D224B2B8F100C59449 /* CompletedEvent */,
 				7B6852CD24AF316D00C59449 /* LatestEvent */,
-				7B6852CC24AF314F00C59449 /* PresentEvent */,
+				7B6852CC24AF314F00C59449 /* UpcomingEvent */,
 				7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */,
 				7B6852C624AF1FD400C59449 /* HomeTabBarViewController.swift */,
 			);
 			path = HomeTabBar;
 			sourceTree = "<group>";
 		};
-		7B6852CC24AF314F00C59449 /* PresentEvent */ = {
+		7B6852CC24AF314F00C59449 /* UpcomingEvent */ = {
 			isa = PBXGroup;
 			children = (
-				7B6852C824AF24C600C59449 /* PresentEventsCollectionViewCell.swift */,
-				7B6852C924AF24C600C59449 /* PresentEventsCollectionViewCell.xib */,
+				7B6852C824AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift */,
+				7B6852C924AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib */,
 			);
-			path = PresentEvent;
+			path = UpcomingEvent;
 			sourceTree = "<group>";
 		};
 		7B6852CD24AF316D00C59449 /* LatestEvent */ = {
@@ -288,6 +293,15 @@
 				7B6852CF24AF318400C59449 /* LatestEventsCollectionViewCell.xib */,
 			);
 			path = LatestEvent;
+			sourceTree = "<group>";
+		};
+		7B6852D224B2B8F100C59449 /* CompletedEvent */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852D324B2B93100C59449 /* CompletedEventsCollectionViewCell.swift */,
+				7B6852D424B2B93100C59449 /* CompletedEventsCollectionViewCell.xib */,
+			);
+			path = CompletedEvent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */,
-				7B6852CB24AF24C600C59449 /* PresentEventsCollectionViewCell.xib in Resources */,
+				7B6852CB24AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib in Resources */,
 				7B6852D124AF318400C59449 /* LatestEventsCollectionViewCell.xib in Resources */,
+				7B6852D624B2B93100C59449 /* CompletedEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */,
@@ -397,7 +412,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6852CA24AF24C600C59449 /* PresentEventsCollectionViewCell.swift in Sources */,
+				7B6852D524B2B93100C59449 /* CompletedEventsCollectionViewCell.swift in Sources */,
+				7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
