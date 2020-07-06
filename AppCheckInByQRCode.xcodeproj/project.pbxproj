@@ -37,6 +37,10 @@
 		7B6852DB24B2C2B600C59449 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852DA24B2C2B600C59449 /* SearchBarViewController.swift */; };
 		7B6852DE24B2C64500C59449 /* InformationUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852DD24B2C64500C59449 /* InformationUser.storyboard */; };
 		7B6852E024B2C68F00C59449 /* InformationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852DF24B2C68F00C59449 /* InformationUserViewController.swift */; };
+		7B6852E324B2CFFB00C59449 /* ViewAllEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852E224B2CFFB00C59449 /* ViewAllEvents.storyboard */; };
+		7B6852E524B2D01A00C59449 /* ViewAllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852E424B2D01A00C59449 /* ViewAllEventsViewController.swift */; };
+		7B6852E824B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852E624B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift */; };
+		7B6852E924B2D93C00C59449 /* ViewAllEventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852E724B2D93C00C59449 /* ViewAllEventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		7B6852DA24B2C2B600C59449 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		7B6852DD24B2C64500C59449 /* InformationUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InformationUser.storyboard; sourceTree = "<group>"; };
 		7B6852DF24B2C68F00C59449 /* InformationUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUserViewController.swift; sourceTree = "<group>"; };
+		7B6852E224B2CFFB00C59449 /* ViewAllEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewAllEvents.storyboard; sourceTree = "<group>"; };
+		7B6852E424B2D01A00C59449 /* ViewAllEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllEventsViewController.swift; sourceTree = "<group>"; };
+		7B6852E624B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllEventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B6852E724B2D93C00C59449 /* ViewAllEventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAllEventsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,7 @@
 				7B6852B124ADE7CF00C59449 /* HomeTab */,
 				7B6852C324AF1F9400C59449 /* HomeTabBar */,
 				7B6852D724B2BE7000C59449 /* SearchEvent */,
+				7B6852E124B2CFAC00C59449 /* ViewAllEvents */,
 				7B6852DC24B2C62500C59449 /* InformationUser */,
 			);
 			path = Application;
@@ -332,6 +341,17 @@
 			path = InformationUser;
 			sourceTree = "<group>";
 		};
+		7B6852E124B2CFAC00C59449 /* ViewAllEvents */ = {
+			isa = PBXGroup;
+			children = (
+				7B6852E224B2CFFB00C59449 /* ViewAllEvents.storyboard */,
+				7B6852E424B2D01A00C59449 /* ViewAllEventsViewController.swift */,
+				7B6852E624B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift */,
+				7B6852E724B2D93C00C59449 /* ViewAllEventsCollectionViewCell.xib */,
+			);
+			path = ViewAllEvents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +437,7 @@
 				7B6852CB24AF24C600C59449 /* UpcomingEventsCollectionViewCell.xib in Resources */,
 				7B6852D124AF318400C59449 /* LatestEventsCollectionViewCell.xib in Resources */,
 				7B6852D624B2B93100C59449 /* CompletedEventsCollectionViewCell.xib in Resources */,
+				7B6852E924B2D93C00C59449 /* ViewAllEventsCollectionViewCell.xib in Resources */,
 				7B4629DC24A59558003B3168 /* LaunchScreen.storyboard in Resources */,
 				7B4629D924A59558003B3168 /* Assets.xcassets in Resources */,
 				7B6852DE24B2C64500C59449 /* InformationUser.storyboard in Resources */,
@@ -425,6 +446,7 @@
 				7B462A0124A5D661003B3168 /* SignUp.storyboard in Resources */,
 				7B4629D424A59557003B3168 /* Login.storyboard in Resources */,
 				7B6852B524ADE88A00C59449 /* HomeTab.storyboard in Resources */,
+				7B6852E324B2CFFB00C59449 /* ViewAllEvents.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +467,7 @@
 				7B6852D524B2B93100C59449 /* CompletedEventsCollectionViewCell.swift in Sources */,
 				7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */,
 				7B6852E024B2C68F00C59449 /* InformationUserViewController.swift in Sources */,
+				7B6852E824B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift in Sources */,
 				7B6852DB24B2C2B600C59449 /* SearchBarViewController.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
@@ -456,6 +479,7 @@
 				7B6852B324ADE85E00C59449 /* HomeTabViewController.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
 				7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */,
+				7B6852E524B2D01A00C59449 /* ViewAllEventsViewController.swift in Sources */,
 				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
 				7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */,
 				7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */,

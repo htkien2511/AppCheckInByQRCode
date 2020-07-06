@@ -75,6 +75,9 @@
                                                         <state key="normal" title="View all">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="viewAllButtonTapped:" destination="CnY-zI-FbC" eventType="touchUpInside" id="N7x-dO-QS8"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,6 +141,9 @@
                                                 <state key="normal" title="View all">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="viewAllButtonTapped:" destination="CnY-zI-FbC" eventType="touchUpInside" id="Ces-mr-7vF"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-Ii-m5y" userLabel="Latest Events Container View">
                                                 <rect key="frame" x="0.0" y="700" width="414" height="350"/>
@@ -174,6 +180,9 @@
                                                         <state key="normal" title="View all">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="viewAllButtonTapped:" destination="CnY-zI-FbC" eventType="touchUpInside" id="SOy-QT-daP"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,11 +246,23 @@
                         <outlet property="latestEventCollectionView" destination="Lbj-kd-pZE" id="DtT-cT-dU7"/>
                         <outlet property="searchBar" destination="xD6-io-OFO" id="SpZ-SX-JPc"/>
                         <outlet property="upcomingEventCollectionView" destination="dyc-ey-Yih" id="Ahe-rz-epD"/>
+                        <outletCollection property="viewAllButton" destination="034-Ie-P8J" collectionClass="NSMutableArray" id="6sD-bP-d8D"/>
+                        <outletCollection property="viewAllButton" destination="j6h-Vc-7Hx" collectionClass="NSMutableArray" id="qjT-O2-ta5"/>
+                        <outletCollection property="viewAllButton" destination="lgh-30-b2i" collectionClass="NSMutableArray" id="LpX-XL-jEG"/>
+                        <segue destination="vcT-vX-YXT" kind="presentation" identifier="viewAllEvents" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8lc-f5-bH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szJ-Rm-XCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373.91304347826087" y="145.98214285714286"/>
+        </scene>
+        <!--ViewAllEvents-->
+        <scene sceneID="LtY-Fg-2Ld">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViewAllEvents" id="vcT-vX-YXT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qv-rU-eJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="111"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,7 @@ class HomeTabBarViewController: UIViewController {
   @IBOutlet weak var latestEventCollectionView: UICollectionView!
   @IBOutlet weak var completedEventCollectionView: UICollectionView!
   @IBOutlet weak var searchBar: UISearchBar!
+  @IBOutlet var viewAllButton: Array<UIButton>!
   
   // MARK: - Properties
   let cellIdentifier = "presentEventsCell"
@@ -42,16 +43,34 @@ class HomeTabBarViewController: UIViewController {
     
     latestEventCollectionView.dataSource = self
     latestEventCollectionView.delegate = self
-    latestEventCollectionView.showsVerticalScrollIndicator = false
+    latestEventCollectionView.showsHorizontalScrollIndicator = false
     
     completedEventCollectionView.register(UINib(nibName: "LatestEventsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     
     completedEventCollectionView.dataSource = self
     completedEventCollectionView.delegate = self
-    completedEventCollectionView.showsVerticalScrollIndicator = false
+    completedEventCollectionView.showsHorizontalScrollIndicator = false
   }
   
   // MARK: - Action
+  @IBAction func viewAllButtonTapped(_ sender: UIButton) {
+    if sender == viewAllButton[0] {
+      performSegue(withIdentifier: "viewAllEvents", sender: "Upcoming Events")
+    }
+    else if sender == viewAllButton[1] {
+      performSegue(withIdentifier: "viewAllEvents", sender: "Latest Events")
+    }
+    else {
+      performSegue(withIdentifier: "viewAllEvents", sender: "Completed Events")
+    }
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "viewAllEvents" {
+      let vc = segue.destination as! ViewAllEventsViewController
+      vc.headerName = sender as? String ?? "Events"
+    }
+  }
   
 }
 
@@ -136,12 +155,14 @@ extension HomeTabBarViewController: UICollectionViewDelegateFlowLayout {
   }
 }
 
+// MARK: - Search Bar Delegate
 extension HomeTabBarViewController: UISearchBarDelegate {
-  func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+  func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
     let storyBoard : UIStoryboard = UIStoryboard(name: "SearchEvent", bundle:nil)
-
+    
     let nextViewController = storyBoard.instantiateViewController(withIdentifier: "searchEventView") as! SearchBarViewController
     nextViewController.modalPresentationStyle = .fullScreen
     self.present(nextViewController, animated:true, completion:nil)
+    return false
   }
 }
