@@ -49,4 +49,9 @@ class InformationUserViewController: UIViewController {
     userImageView.layer.masksToBounds = true
     
   }
+  
+  // MARK: - Action
+  @IBAction func logoutButtonTapped(_ sender: UIButton) {
+  }
+  
 }

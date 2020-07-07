@@ -120,6 +120,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B21116624B4301E000F68D4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7B4629FA24A5985F003B3168 /* Login */,
+				7B4629FF24A5D0C6003B3168 /* SignUp */,
+				7B462A0824A60301003B3168 /* ForgotPassword */,
+				7B6852B124ADE7CF00C59449 /* ManagerTabBarViewController */,
+				7B6852C324AF1F9400C59449 /* HomeTabBar */,
+				7B6852D724B2BE7000C59449 /* SearchEvent */,
+				7B6852E124B2CFAC00C59449 /* ViewAllEvents */,
+				7B6852DC24B2C62500C59449 /* InformationUser */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		7B4629C024A59557003B3168 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +160,7 @@
 				7B4629F524A597D9003B3168 /* Application */,
 				7B4629F624A597E1003B3168 /* Assets */,
 				7B4629F724A59843003B3168 /* Model */,
+				7B21116624B4301E000F68D4 /* Scenes */,
 			);
 			path = AppCheckInByQRCode;
 			sourceTree = "<group>";
@@ -175,14 +191,6 @@
 				7B4629FC24A59D01003B3168 /* HelperMethod */,
 				7B4629F924A59857003B3168 /* Info */,
 				7B4629FB24A5986A003B3168 /* LaunchScreen */,
-				7B4629FA24A5985F003B3168 /* Login */,
-				7B4629FF24A5D0C6003B3168 /* SignUp */,
-				7B462A0824A60301003B3168 /* ForgotPassword */,
-				7B6852B124ADE7CF00C59449 /* ManagerTabBarViewController */,
-				7B6852C324AF1F9400C59449 /* HomeTabBar */,
-				7B6852D724B2BE7000C59449 /* SearchEvent */,
-				7B6852E124B2CFAC00C59449 /* ViewAllEvents */,
-				7B6852DC24B2C62500C59449 /* InformationUser */,
 			);
 			path = Application;
 			sourceTree = "<group>";
