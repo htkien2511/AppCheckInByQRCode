@@ -128,6 +128,7 @@ class LoginViewController: UIViewController {
   }
   
   private func checkLogin(email: String, password: String) {
+    LoadingDialog.showLoadingDialog(self)
     let networkManager = NetworkManager()
     networkManager.login(email: email, password: password) { (user, error) in
       if error != nil {
@@ -138,7 +139,10 @@ class LoginViewController: UIViewController {
         }
       } else {
         DispatchQueue.main.async {
-          self.goToMainScreen()
+          // dismiss loading dialog
+          self.dismiss(animated: true) {
+            self.goToMainScreen()
+          }
         }
         SingletonUser.sharedManager.user = user!
       }
@@ -153,6 +157,8 @@ class LoginViewController: UIViewController {
     nextViewController.modalTransitionStyle = .crossDissolve
     self.present(nextViewController, animated:true, completion:nil)
   }
+  
+  
 }
 
 // MARK: - Text Field Delegate

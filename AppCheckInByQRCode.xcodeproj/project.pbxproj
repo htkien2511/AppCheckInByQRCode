@@ -54,6 +54,7 @@
 		7B6852EB24B3126A00C59449 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852EA24B3126A00C59449 /* User.swift */; };
 		7B6852ED24B31AD700C59449 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852EC24B31AD600C59449 /* Validation.swift */; };
 		7B6852EF24B3275E00C59449 /* SingletonUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852EE24B3275E00C59449 /* SingletonUser.swift */; };
+		7BB874C124B86078009309A4 /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB874C024B86078009309A4 /* LoadingDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		7B6852EA24B3126A00C59449 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7B6852EC24B31AD600C59449 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		7B6852EE24B3275E00C59449 /* SingletonUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonUser.swift; sourceTree = "<group>"; };
+		7BB874C024B86078009309A4 /* LoadingDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 				7B4629FD24A59D2D003B3168 /* UIViewExtension.swift */,
 				7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */,
 				7B6852EC24B31AD600C59449 /* Validation.swift */,
+				7BB874C024B86078009309A4 /* LoadingDialog.swift */,
 			);
 			path = HelperMethod;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
 				7B2111CA24B81493000F68D4 /* HTTPMethod.swift in Sources */,
 				7B2111AD24B812FE000F68D4 /* Event.swift in Sources */,
+				7BB874C124B86078009309A4 /* LoadingDialog.swift in Sources */,
 				7B6852EB24B3126A00C59449 /* User.swift in Sources */,
 				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
 				7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */,
