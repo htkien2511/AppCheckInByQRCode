@@ -52,6 +52,7 @@ class InformationUserViewController: UIViewController {
   
   // MARK: - Action
   @IBAction func logoutButtonTapped(_ sender: UIButton) {
+    LoadingDialog.showLoadingDialog(self)
     let networkManager = NetworkManager()
     let accessToken = SingletonUser.sharedManager.user!.accessToken
     networkManager.logout(accessToken: accessToken) { (message, error) in
@@ -60,7 +61,10 @@ class InformationUserViewController: UIViewController {
       }
       else {
         DispatchQueue.main.async {
-          self.goToLoginScreen()
+          // dissmiss loading dialog
+          self.dismiss(animated: true) {
+            self.goToLoginScreen()
+          }
         }
       }
     }
