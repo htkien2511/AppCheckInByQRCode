@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum ErrorLogin: String {
+  case emailNil = "Email can't nil!"
+  case passwordNil = "Password can't nil!"
+  case emailInvalid = "Email Invalid!"
+  case emailPasswordIncorrect = "Email or password incorrect!"
+}
+
 class LoginViewController: UIViewController {
   
   // MARK: - Outlets
@@ -19,6 +26,9 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var errorLabel: UILabel!
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
+  
+  // MARK: - Properties
+  var errorLogin: ErrorLogin?
   
   // MARK: -
   override func viewDidLoad() {
@@ -93,12 +103,28 @@ class LoginViewController: UIViewController {
   @IBAction func loginButtonTapped(_ sender: UIButton) {
     let email = emailTextField.text!
     let password = passwordTextField.text!
-    if Validation.isEmailValid(email) {
-      checkLogin(email: email, password: password)
-    } else {
-      errorLabel.isHidden = false
-      errorLabel.text = "Email invalid"
+    guard Validation.isStringNotNil(emailTextField.text!) else {
+      showError(message: ErrorLogin.emailNil.rawValue)
+      errorLogin = .emailNil
+      return
     }
+    guard Validation.isStringNotNil(password) else {
+      showError(message: ErrorLogin.passwordNil.rawValue)
+      errorLogin = .passwordNil
+      return
+    }
+    guard Validation.isEmailValid(email) else {
+      showError(message: ErrorLogin.emailInvalid.rawValue)
+      errorLogin = .emailInvalid
+      return
+    }
+
+    checkLogin(email: email, password: password)
+  }
+  
+  private func showError(message: String) {
+    errorLabel.isHidden = false
+    errorLabel.text = message
   }
   
   private func checkLogin(email: String, password: String) {
@@ -107,8 +133,8 @@ class LoginViewController: UIViewController {
       if error != nil {
         print(error!)
         DispatchQueue.main.async {
-          self.errorLabel.isHidden = false
-          self.errorLabel.text = "Email invalid"
+          self.showError(message: ErrorLogin.emailPasswordIncorrect.rawValue)
+          self.errorLogin = .emailPasswordIncorrect
         }
       } else {
         DispatchQueue.main.async {
@@ -149,5 +175,27 @@ extension LoginViewController: UITextFieldDelegate {
       }
     }
     return true
+  }
+  
+  // ẩn thông báo lỗi khi nhập mới email hoặc password
+  func textFieldDidChangeSelection(_ textField: UITextField) {
+    guard errorLogin != nil else { return }
+    let isEmailError = errorLogin == ErrorLogin.emailNil ||
+      errorLogin == ErrorLogin.emailPasswordIncorrect
+    let isPasswordError = errorLogin == ErrorLogin.passwordNil ||
+      errorLogin == ErrorLogin.emailPasswordIncorrect
+    let isEmailInValid = errorLogin == ErrorLogin.emailInvalid
+    
+    if textField == emailTextField {
+      if isEmailInValid && Validation.isEmailValid(textField.text!) {
+        errorLabel.isHidden = true
+      }
+      else if isEmailError {
+        errorLabel.isHidden = true
+      }
+    }
+    else if textField == passwordTextField && isPasswordError {
+      errorLabel.isHidden = true
+    }
   }
 }
