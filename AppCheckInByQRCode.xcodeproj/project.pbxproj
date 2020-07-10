@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2111AD24B812FE000F68D4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111AC24B812FE000F68D4 /* Event.swift */; };
+		7B2111B824B8147E000F68D4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111B524B8147E000F68D4 /* ParameterEncoding.swift */; };
+		7B2111B924B8147E000F68D4 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111B624B8147E000F68D4 /* URLParameterEncoder.swift */; };
+		7B2111BA24B8147E000F68D4 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111B724B8147E000F68D4 /* JSONParameterEncoder.swift */; };
+		7B2111BC24B81485000F68D4 /* EventEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111BB24B81485000F68D4 /* EventEndPoint.swift */; };
+		7B2111BE24B8148B000F68D4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111BD24B8148B000F68D4 /* NetworkManager.swift */; };
+		7B2111C524B81493000F68D4 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111BF24B81493000F68D4 /* NetworkLogger.swift */; };
+		7B2111C624B81493000F68D4 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111C024B81493000F68D4 /* HTTPTask.swift */; };
+		7B2111C724B81493000F68D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111C124B81493000F68D4 /* Router.swift */; };
+		7B2111C824B81493000F68D4 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111C224B81493000F68D4 /* EndPointType.swift */; };
+		7B2111C924B81493000F68D4 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111C324B81493000F68D4 /* NetworkRouter.swift */; };
+		7B2111CA24B81493000F68D4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2111C424B81493000F68D4 /* HTTPMethod.swift */; };
 		7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629CC24A59557003B3168 /* AppDelegate.swift */; };
 		7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629CE24A59557003B3168 /* SceneDelegate.swift */; };
 		7B4629D124A59557003B3168 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4629D024A59557003B3168 /* LoginViewController.swift */; };
@@ -57,6 +69,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B2111AC24B812FE000F68D4 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7B2111B524B8147E000F68D4 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		7B2111B624B8147E000F68D4 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		7B2111B724B8147E000F68D4 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		7B2111BB24B81485000F68D4 /* EventEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEndPoint.swift; sourceTree = "<group>"; };
+		7B2111BD24B8148B000F68D4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B2111BF24B81493000F68D4 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		7B2111C024B81493000F68D4 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		7B2111C124B81493000F68D4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7B2111C224B81493000F68D4 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		7B2111C324B81493000F68D4 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		7B2111C424B81493000F68D4 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		7B4629C924A59557003B3168 /* AppCheckInByQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCheckInByQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4629CC24A59557003B3168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4629CE24A59557003B3168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +159,56 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		7B2111B024B81394000F68D4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111B124B813A4000F68D4 /* EndPoint */,
+				7B2111B324B813B4000F68D4 /* Manager */,
+				7B2111B424B813B8000F68D4 /* Service */,
+				7B2111B224B813AA000F68D4 /* Encoding */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7B2111B124B813A4000F68D4 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111BB24B81485000F68D4 /* EventEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		7B2111B224B813AA000F68D4 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111B724B8147E000F68D4 /* JSONParameterEncoder.swift */,
+				7B2111B524B8147E000F68D4 /* ParameterEncoding.swift */,
+				7B2111B624B8147E000F68D4 /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		7B2111B324B813B4000F68D4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111BD24B8148B000F68D4 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7B2111B424B813B8000F68D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111C224B81493000F68D4 /* EndPointType.swift */,
+				7B2111C424B81493000F68D4 /* HTTPMethod.swift */,
+				7B2111C024B81493000F68D4 /* HTTPTask.swift */,
+				7B2111BF24B81493000F68D4 /* NetworkLogger.swift */,
+				7B2111C324B81493000F68D4 /* NetworkRouter.swift */,
+				7B2111C124B81493000F68D4 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		7B4629C024A59557003B3168 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +235,7 @@
 				7B4629F624A597E1003B3168 /* Assets */,
 				7B4629F724A59843003B3168 /* Model */,
 				7B21116624B4301E000F68D4 /* Scenes */,
+				7B2111B024B81394000F68D4 /* Networking */,
 			);
 			path = AppCheckInByQRCode;
 			sourceTree = "<group>";
@@ -207,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				7B6852EA24B3126A00C59449 /* User.swift */,
+				7B2111AC24B812FE000F68D4 /* Event.swift */,
 				7B6852EE24B3275E00C59449 /* SingletonUser.swift */,
 			);
 			path = Model;
@@ -485,23 +561,35 @@
 				7B6852CA24AF24C600C59449 /* UpcomingEventsCollectionViewCell.swift in Sources */,
 				7B6852E024B2C68F00C59449 /* InformationUserViewController.swift in Sources */,
 				7B6852E824B2D93C00C59449 /* ViewAllEventsCollectionViewCell.swift in Sources */,
+				7B2111BA24B8147E000F68D4 /* JSONParameterEncoder.swift in Sources */,
+				7B2111C724B81493000F68D4 /* Router.swift in Sources */,
 				7B6852DB24B2C2B600C59449 /* SearchBarViewController.swift in Sources */,
+				7B2111C624B81493000F68D4 /* HTTPTask.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
+				7B2111C524B81493000F68D4 /* NetworkLogger.swift in Sources */,
 				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
+				7B2111CA24B81493000F68D4 /* HTTPMethod.swift in Sources */,
+				7B2111AD24B812FE000F68D4 /* Event.swift in Sources */,
 				7B6852EB24B3126A00C59449 /* User.swift in Sources */,
 				7B4629FE24A59D2D003B3168 /* UIViewExtension.swift in Sources */,
 				7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */,
+				7B2111C824B81493000F68D4 /* EndPointType.swift in Sources */,
 				7B4629D124A59557003B3168 /* LoginViewController.swift in Sources */,
+				7B2111B924B8147E000F68D4 /* URLParameterEncoder.swift in Sources */,
 				7B4629CD24A59557003B3168 /* AppDelegate.swift in Sources */,
 				7B6852ED24B31AD700C59449 /* Validation.swift in Sources */,
 				7B6852B324ADE85E00C59449 /* ManagerTabBarViewController.swift in Sources */,
 				7B4629D724A59557003B3168 /* AppCheckInByQRCode.xcdatamodeld in Sources */,
+				7B2111C924B81493000F68D4 /* NetworkRouter.swift in Sources */,
 				7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */,
+				7B2111B824B8147E000F68D4 /* ParameterEncoding.swift in Sources */,
 				7B6852E524B2D01A00C59449 /* ViewAllEventsViewController.swift in Sources */,
 				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
 				7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */,
+				7B2111BE24B8148B000F68D4 /* NetworkManager.swift in Sources */,
 				7B6852EF24B3275E00C59449 /* SingletonUser.swift in Sources */,
+				7B2111BC24B81485000F68D4 /* EventEndPoint.swift in Sources */,
 				7B4629CF24A59557003B3168 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
