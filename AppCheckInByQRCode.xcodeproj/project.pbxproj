@@ -33,8 +33,6 @@
 		7B462A0524A5E525003B3168 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */; };
 		7B462A0A24A60319003B3168 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B462A0924A60319003B3168 /* ForgotPassword.storyboard */; };
 		7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */; };
-		7B68528B24AD8EBE00C59449 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528A24AD8EBE00C59449 /* API.swift */; };
-		7B68528D24AD902A00C59449 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68528C24AD902A00C59449 /* DataManager.swift */; };
 		7B6852B324ADE85E00C59449 /* ManagerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */; };
 		7B6852B524ADE88A00C59449 /* ManagerTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */; };
 		7B6852C524AF1FB600C59449 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */; };
@@ -101,8 +99,6 @@
 		7B462A0424A5E525003B3168 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7B462A0924A60319003B3168 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		7B68528A24AD8EBE00C59449 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		7B68528C24AD902A00C59449 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTabBarViewController.swift; sourceTree = "<group>"; };
 		7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerTabBar.storyboard; sourceTree = "<group>"; };
 		7B6852C424AF1FB600C59449 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
@@ -260,7 +256,6 @@
 		7B4629F524A597D9003B3168 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				7B68528924AD8EAE00C59449 /* API */,
 				7B6852B024ADE7BA00C59449 /* AppDelegate */,
 				7B4629F824A5984A003B3168 /* CoreData */,
 				7B4629FC24A59D01003B3168 /* HelperMethod */,
@@ -348,15 +343,6 @@
 				7B462A0B24A6032A003B3168 /* ForgotPasswordViewController.swift */,
 			);
 			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		7B68528924AD8EAE00C59449 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				7B68528A24AD8EBE00C59449 /* API.swift */,
-				7B68528C24AD902A00C59449 /* DataManager.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		7B6852B024ADE7BA00C59449 /* AppDelegate */ = {
@@ -567,7 +553,6 @@
 				7B2111C624B81493000F68D4 /* HTTPTask.swift in Sources */,
 				7B462A0C24A6032A003B3168 /* ForgotPasswordViewController.swift in Sources */,
 				7B2111C524B81493000F68D4 /* NetworkLogger.swift in Sources */,
-				7B68528D24AD902A00C59449 /* DataManager.swift in Sources */,
 				7B462A0324A5D687003B3168 /* SignUpViewController.swift in Sources */,
 				7B2111CA24B81493000F68D4 /* HTTPMethod.swift in Sources */,
 				7B2111AD24B812FE000F68D4 /* Event.swift in Sources */,
@@ -585,7 +570,6 @@
 				7B6852C724AF1FD400C59449 /* HomeTabBarViewController.swift in Sources */,
 				7B2111B824B8147E000F68D4 /* ParameterEncoding.swift in Sources */,
 				7B6852E524B2D01A00C59449 /* ViewAllEventsViewController.swift in Sources */,
-				7B68528B24AD8EBE00C59449 /* API.swift in Sources */,
 				7B6852D024AF318400C59449 /* LatestEventsCollectionViewCell.swift in Sources */,
 				7B2111BE24B8148B000F68D4 /* NetworkManager.swift in Sources */,
 				7B6852EF24B3275E00C59449 /* SingletonUser.swift in Sources */,

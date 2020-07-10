@@ -102,10 +102,14 @@ class LoginViewController: UIViewController {
   }
   
   private func checkLogin(email: String, password: String) {
-    let dataManager = DataManager(baseURL: API.AuthenticatedBaseURL)
-    dataManager.login(email: email, password: password) { (user, error) in
+    let networkManager = NetworkManager()
+    networkManager.login(email: email, password: password) { (user, error) in
       if error != nil {
         print(error!)
+        DispatchQueue.main.async {
+          self.errorLabel.isHidden = false
+          self.errorLabel.text = "Email invalid"
+        }
       } else {
         DispatchQueue.main.async {
           let storyBoard : UIStoryboard = UIStoryboard(name: "ManagerTabBar", bundle:nil)
