@@ -52,6 +52,26 @@ class InformationUserViewController: UIViewController {
   
   // MARK: - Action
   @IBAction func logoutButtonTapped(_ sender: UIButton) {
+    let networkManager = NetworkManager()
+    let accessToken = SingletonUser.sharedManager.user!.accessToken
+    networkManager.logout(accessToken: accessToken) { (message, error) in
+      if error != nil {
+        print(error!)
+      }
+      else {
+        DispatchQueue.main.async {
+          self.goToLoginScreen()
+        }
+      }
+    }
   }
   
+  private func goToLoginScreen() {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Login", bundle:nil)
+    
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "loginScreen") as! LoginViewController
+    nextViewController.modalPresentationStyle = .fullScreen
+    nextViewController.modalTransitionStyle = .crossDissolve
+    self.present(nextViewController, animated:true, completion:nil)
+  }
 }

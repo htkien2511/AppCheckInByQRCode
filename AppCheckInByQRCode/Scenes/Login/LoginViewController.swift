@@ -93,7 +93,7 @@ class LoginViewController: UIViewController {
   @IBAction func loginButtonTapped(_ sender: UIButton) {
     let email = emailTextField.text!
     let password = passwordTextField.text!
-    if Validation.isValid(email: email) {
+    if Validation.isEmailValid(email) {
       checkLogin(email: email, password: password)
     } else {
       errorLabel.isHidden = false
@@ -112,16 +112,20 @@ class LoginViewController: UIViewController {
         }
       } else {
         DispatchQueue.main.async {
-          let storyBoard : UIStoryboard = UIStoryboard(name: "ManagerTabBar", bundle:nil)
-          
-          let nextViewController = storyBoard.instantiateViewController(withIdentifier: "managerTabBar") as! ManagerTabBarViewController
-          nextViewController.modalPresentationStyle = .fullScreen
-          nextViewController.modalTransitionStyle = .crossDissolve
-          self.present(nextViewController, animated:true, completion:nil)
+          self.goToMainScreen()
         }
         SingletonUser.sharedManager.user = user!
       }
     }
+  }
+  
+  private func goToMainScreen() {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "ManagerTabBar", bundle:nil)
+    
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "managerTabBar") as! ManagerTabBarViewController
+    nextViewController.modalPresentationStyle = .fullScreen
+    nextViewController.modalTransitionStyle = .crossDissolve
+    self.present(nextViewController, animated:true, completion:nil)
   }
 }
 
@@ -137,7 +141,7 @@ extension LoginViewController: UITextFieldDelegate {
       textField.resignFirstResponder()
       let email = emailTextField.text!
       let password = passwordTextField.text!
-      if Validation.isValid(email: email) {
+      if Validation.isEmailValid(email) {
         checkLogin(email: email, password: password)
       } else {
         errorLabel.isHidden = false

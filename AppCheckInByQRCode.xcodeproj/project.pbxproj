@@ -146,7 +146,7 @@
 				7B4629FA24A5985F003B3168 /* Login */,
 				7B4629FF24A5D0C6003B3168 /* SignUp */,
 				7B462A0824A60301003B3168 /* ForgotPassword */,
-				7B6852B124ADE7CF00C59449 /* ManagerTabBarViewController */,
+				7B6852B124ADE7CF00C59449 /* ManagerTabBar */,
 				7B6852C324AF1F9400C59449 /* HomeTabBar */,
 				7B6852D724B2BE7000C59449 /* SearchEvent */,
 				7B6852E124B2CFAC00C59449 /* ViewAllEvents */,
@@ -177,8 +177,8 @@
 		7B2111B224B813AA000F68D4 /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
-				7B2111B724B8147E000F68D4 /* JSONParameterEncoder.swift */,
 				7B2111B524B8147E000F68D4 /* ParameterEncoding.swift */,
+				7B2111B724B8147E000F68D4 /* JSONParameterEncoder.swift */,
 				7B2111B624B8147E000F68D4 /* URLParameterEncoder.swift */,
 			);
 			path = Encoding;
@@ -354,13 +354,13 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		7B6852B124ADE7CF00C59449 /* ManagerTabBarViewController */ = {
+		7B6852B124ADE7CF00C59449 /* ManagerTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				7B6852B224ADE85E00C59449 /* ManagerTabBarViewController.swift */,
 				7B6852B424ADE88A00C59449 /* ManagerTabBar.storyboard */,
 			);
-			path = ManagerTabBarViewController;
+			path = ManagerTabBar;
 			sourceTree = "<group>";
 		};
 		7B6852C324AF1F9400C59449 /* HomeTabBar */ = {

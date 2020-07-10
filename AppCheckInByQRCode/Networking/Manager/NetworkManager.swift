@@ -28,7 +28,7 @@ struct NetworkManager {
   static let MovieAPIKey = ""
   let router = Router<EventApi>()
   
-  func request(eventAPI: EventApi, completion: @escaping (Data? ,_ error: String?)->()) {
+  func request(eventAPI: EventApi, completion: @escaping (Data? , _ error: String?)->()) {
     router.request(eventAPI) { (data, response, error) in
       if error != nil {
         completion(nil, "Please check your network connection.")
@@ -57,6 +57,7 @@ struct NetworkManager {
     }
   }
   
+  // MARK: - Login
   func login(email: String, password: String, completion: @escaping (User? ,_ error: String?)->()){
     request(eventAPI: .login(email: email, password: password)) { (responseData, error) in
       if error != nil {
@@ -71,34 +72,23 @@ struct NetworkManager {
         }
       }
     }
-//    router.request(.login(email: email, password: password)) { (data, response, error) in
-//      if error != nil {
-//        completion(nil, "Please check your network connection.")
-//      }
-//      
-//      if let response = response as? HTTPURLResponse {
-//        let result = self.handleNetworkResponse(response)
-//        switch result {
-//        case .success:
-//          guard let responseData = data else {
-//            completion(nil, NetworkResponse.noData.rawValue)
-//            return
-//          }
-//          do {
-//            //let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-//            //print(jsonData)
-//            let apiResponse = try JSONDecoder().decode(User.self, from: responseData)
-//            completion(responseData, nil)
-//            print(apiResponse)
-//          }catch {
-//            print(error)
-//            completion(nil, NetworkResponse.unableToDecode.rawValue)
-//          }
-//        case .failure(let networkFailureError):
-//          completion(nil, networkFailureError)
-//        }
-//      }
-//    }
+  }
+  
+  // MARK: - Log out
+  func logout(accessToken: String, completion: @escaping (AnyObject? ,_ error: String?)->()) {
+    request(eventAPI: .logout(accessToken: accessToken)) { (responseData, error) in
+      if error != nil {
+        print(error!)
+      } else {
+        do {
+          //let apiResponse = try JSONDecoder().decode(User.self, from: responseData!)
+          completion(responseData as! AnyObject, nil)
+        }catch {
+          print(error)
+          completion(nil, NetworkResponse.unableToDecode.rawValue)
+        }
+      }
+    }
   }
   
   fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
@@ -112,38 +102,7 @@ struct NetworkManager {
   }
 }
 
-// MARK: - Log out
-extension NetworkManager {
-  func logout(accessToken: String, completion: @escaping (AnyObject? ,_ error: String?)->()) {
-    router.request(.logout(accessToken: accessToken)) { (data, response, error) in
-      if error != nil {
-        completion(nil, "Please check your network connection.")
-      }
-      
-      if let response = response as? HTTPURLResponse {
-        let result = self.handleNetworkResponse(response)
-        switch result {
-        case .success:
-          guard let responseData = data else {
-            completion(nil, NetworkResponse.noData.rawValue)
-            return
-          }
-          do {
-            let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-            //print(jsonData)
-            //let apiResponse = try JSONDecoder().decode(User.self, from: responseData)
-            completion(jsonData as AnyObject, nil)
-          }catch {
-            print(error)
-            completion(nil, NetworkResponse.unableToDecode.rawValue)
-          }
-        case .failure(let networkFailureError):
-          completion(nil, networkFailureError)
-        }
-      }
-    }
-  }
-}
+
 
 // MARK: - Sign Up
 extension NetworkManager {
